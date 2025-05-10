@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    font-size: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(20, 20, 20, 0.95)), url(imagem/home2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.menu {
+    background: linear-gradient(to right top, #000000, #202020);
+    padding: 3rem;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.07);
+    text-shadow: 0 0 10px rgba(103, 71, 163, 0.5);
+}
+
+.logo span {
+    color: #6747a3;
+}
+
+.menu .lista-itens {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.menu .lista-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu .lista-itens a:before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #6747a3;
+    transition: all 0.5s ease;
+}
+
+.menu .lista-itens a:hover:before {
+    width: 100%;
+}
+
+.menu .lista-itens a:hover {
+    color: #b39ddb;
+}
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.texto-primario {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.texto-primario:hover {
+    transform: scale(1.02);
+    color: #b39ddb;
+    text-shadow: 0 0 15px rgba(179, 157, 219, 0.6);
+}
+
+.texto-secundario {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.texto-secundario:hover {
+    transform: scale(1.02);
+    color: #b39ddb;
+    text-shadow: 0 0 15px rgba(179, 157, 219, 0.6);
+}
+
+.footer {
+    background-color: #131313;
+    padding: 3rem 0;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1900px; 
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer .box {
+    flex: 1 1 25rem;
+    min-width: 250px;
+    padding: 1rem;
+}
+
+.footer .box h3 {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer .box h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #6747a3;
+}
+
+.footer .box .links,
+.footer .box p {
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+    display: block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer .box .links:hover,
+.footer .box p:hover {
+    color: #b39ddb;
+    padding-left: 5px;
+}
+
+.footer .box .share {
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #111;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.footer .box .share a:hover {
+    background: #6747a3;
+    transform: translateY(-3px);
+}
+
+.footer .box form .email {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.footer .box form .email:focus {
+    border-color: #6747a3;
+    outline: none;
+}
+
+.footer .box form .email:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.4);
+    border: solid 3px #6747a3;
+}
+
+.footer .box form button {
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: linear-gradient(to right top, #9d6df9, #222222);
+    padding: 1.2rem;
+    border: none;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.footer .box form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.4);
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+    background-color: #131313;
+    border-top: 1px solid #333;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.copyright span {
+    color: #6747a3;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HeroFit</title>
+    <script src="https://kit.fontawesome.com/43d6fb86d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo-header">
+                <h1>Hero<span>Fit</span></h1>
+                <p>Sua jornada fitness começa aqui</p>
+            </div>
+            
+            <div class="social-login">
+                <h3>Entre com:</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            
+            <form class="login-form">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Digite seu e-mail" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Digite sua senha" required>
+                </div>
+                
+                <div class="options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="terms" required>
+                        <span class="checkmark"></span>
+                        <span>Lembrar Senha</span>
+                    </label>
+                    <a href="#" class="forgot-password" onclick="esqueciSenha()">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="submit" class="login-btn">Entrar <i class="fas fa-arrow-right"></i></button>
+            </form>
+            
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="/Cadastro HeroFit/index.html">Registre-se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function esqueciSenha() {
+            alert("Por favor, entre em contato com o suporte para recuperar sua senha.");
+        }
+        
+        document.querySelector('.login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = '/Principal basico HeroFit/index.html';
+        });
+    </script>
+</body>
+</html>
