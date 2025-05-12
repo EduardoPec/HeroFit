@@ -173,6 +173,29 @@ header {
     margin-bottom: 5rem;
 }
 
+.bnt {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background: linear-gradient(to right top, #9d6df9, #222222);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.3);
+}
+
+.bnt:hover {
+    transform: scale(1.04);  
+    transition: 0.6s;
+}
+
 .review-item {
     background: rgba(17, 17, 17, 0.8);
     border-radius: 10px;
@@ -341,29 +364,6 @@ input::placeholder, textarea::placeholder {
     font-size: 1.4rem;
 }
 
-.bnt {
-    display: inline-block;
-    padding: 1.5rem 3rem;
-    background: linear-gradient(to right top, #9d6df9, #222222);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-top: 2rem;
-    width: 100%;
-    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.3);
-}
-
-.bnt:hover {
-    transform: scale(1.04);  
-    transition: 0.6s;
-}
-
 /* Menu Hamburguer para Mobile */
 .menu .hamburguer {
     display: none;
@@ -483,10 +483,5 @@ input::placeholder, textarea::placeholder {
     
     form {
         padding: 2rem;
-    }
-    
-    .bnt {
-        padding: 1.2rem 2rem;
-        font-size: 1.4rem;
     }
 }

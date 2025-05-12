@@ -257,25 +257,6 @@ header {
     transform: translateX(5px);
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2.5rem;
-    background: linear-gradient(to right top, #9d6df9, #222222);
-    color: white;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.3);
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(103, 71, 163, 0.5);
-}
-
 .te {
     display: flex;
     justify-content: center;

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/43d6fb86d2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Meu Perfil - HeroFit</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1 class="logo"><span>Hero</span>Fit</h1>
+
+            <div class="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="menu-header">
+                <ul class="lista-itens">
+                    <li><a href="/Principal basico HeroFit/index.html">Inicio</a></li>
+                    <li><a href="/Servicos HeroFit/index.html">Serviços</a></li>
+                    <li><a href="/Aulas HeroFit/aula.html">Aulas</a></li>
+                    <li><a href="/Treino HeroFit/treino.html">Treinos</a></li>
+                    <li><a href="/Planos HeroFit/index.html">Planos</a></li>
+                    <li><a href="/Feedbacks HeroFit/index.html">Feedback</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <section class="profile-header">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="img/Foto Perfil Anonimo.jpg" alt="Foto do Aluno">
+                    <button class="edit-btn"><i class="fas fa-camera"></i></button>
+                </div>
+                <div class="profile-info">
+                    <h2>Carlos Eduardo Silva</h2>
+                    <p><i class="fas fa-user"></i> 28 anos</p>
+                    <p><i class="fas fa-id-card"></i> Plano Premium</p>
+                    <p class="status active"><i class="fas fa-circle"></i> Matrícula Ativa</p>
+                    <p><i class="fas fa-calendar-alt"></i> Vencimento: 15/12/2023</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-content">
+            <div class="metrics-card">
+                <h3><i class="fas fa-chart-line"></i> Dados Físicos</h3>
+                <div class="metrics-grid">
+                    <div class="metric">
+                        <span>Peso</span>
+                        <strong>78.5 kg</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Altura</span>
+                        <strong>1.75 m</strong>
+                    </div>
+                    <div class="metric">
+                        <span>IMC</span>
+                        <strong>25.6</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Braço</span>
+                        <strong>36 cm</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Cintura</span>
+                        <strong>84 cm</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Coxa</span>
+                        <strong>52 cm</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h3><i class="fas fa-weight"></i> Evolução de Peso</h3>
+                <canvas id="weightChart"></canvas>
+            </div>
+        </section>
+
+        <section class="workout-section">
+            <div class="workout-card">
+                <div class="workout-header">
+                    <h3><i class="fas fa-dumbbell"></i> Ficha de Treino Atual</h3>
+                    <button class="request-btn">
+                        <i class="fas fa-plus"></i> Nova Ficha
+                    </button>
+                </div>
+                
+                <div class="workout-tabs">
+                    <button class="tab-btn active">Segunda</button>
+                    <button class="tab-btn">Quarta</button>
+                    <button class="tab-btn">Sexta</button>
+                </div>
+                
+                <div id="segunda" class="tab-content" style="display: block;">
+                    <div class="exercise">
+                        <h4>Supino Reto</h4>
+                        <p>4 séries x 10 repetições (50kg)</p>
+                    </div>
+                    <div class="exercise">
+                        <h4>Agachamento Livre</h4>
+                        <p>4 séries x 12 repetições (60kg)</p>
+                    </div>
+                    <div class="exercise">
+                        <h4>Remada Curvada</h4>
+                        <p>3 séries x 12 repetições (40kg)</p>
+                    </div>
+                </div>
+                
+                <div id="quarta" class="tab-content">
+                    <div class="exercise">
+                        <h4>Desenvolvimento Militar</h4>
+                        <p>4 séries x 10 repetições (30kg)</p>
+                    </div>
+                    <div class="exercise">
+                        <h4>Levantamento Terra</h4>
+                        <p>4 séries x 8 repetições (80kg)</p>
+                    </div>
+                    <div class="exercise">
+                        <h4>Barra Fixa</h4>
+                        <p>3 séries x 8 repetições</p>
+                    </div>
+                </div>
+                
+                <div id="sexta" class="tab-content">
+                    <div class="exercise">
+                        <h4>Leg Press</h4>
+                        <p>4 séries x 12 repetições (120kg)</p>
+                    </div>
+                    <div class="exercise">
+                        <h4>Rosca Direta</h4>
+                        <p>3 séries x 12 repetições (20kg)</p>
+                    </div>
+                    <div class="exercise">
+                        <h4>Tríceps Corda</h4>
+                        <p>3 séries x 15 repetições (25kg)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="classes-section">
+            <div class="classes-card">
+                <h3><i class="fas fa-calendar-check"></i> Aulas Agendadas</h3>
+                <div class="class-item">
+                    <div class="class-info">
+                        <h4>Funcional Avançado</h4>
+                        <p><i class="fas fa-clock"></i> Segunda, 18:00 - 19:00</p>
+                        <p><i class="fas fa-user"></i> Prof. Renato</p>
+                    </div>
+                    <span class="status present"><i class="fas fa-check"></i> Presente</span>
+                </div>
+                <div class="class-item">
+                    <div class="class-info">
+                        <h4>Spinning</h4>
+                        <p><i class="fas fa-clock"></i> Quarta, 19:00 - 20:00</p>
+                        <p><i class="fas fa-user"></i> Prof. Marcela</p>
+                    </div>
+                    <span class="status absent"><i class="fas fa-times"></i> Faltou</span>
+                </div>
+                <div class="class-item">
+                    <div class="class-info">
+                        <h4>Yoga</h4>
+                        <p><i class="fas fa-clock"></i> Sexta, 07:00 - 08:00</p>
+                        <p><i class="fas fa-user"></i> Prof. Luiza</p>
+                    </div>
+                    <span class="status pending"><i class="fas fa-question"></i> Pendente</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-card">
+                <h3><i class="fas fa-envelope"></i> Mensagem para Instrutor</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="instructor">Instrutor:</label>
+                        <select id="instructor">
+                            <option>Renato Souza</option>
+                            <option>Marcela Silva</option>
+                            <option>João Paulo</option>
+                            <option>Luiza Botelho</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" rows="4" placeholder="Digite sua mensagem..."></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
