@@ -292,15 +292,14 @@ header {
 .botoes-treino {
     display: flex;
     justify-content: center;
-    gap: 50rem;
-    flex-wrap: wrap;
+    gap: 2rem; 
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .botoes-treino .btn {
     margin: 0;
-    flex: 1 1 calc(50% - 1rem);
-    text-align: center;
+    flex: 0 0 auto; 
 }
 
 .btn {
@@ -495,6 +494,17 @@ header {
     .treino .abcd a.btn {
         width: 100%;
         margin: 1rem 0 0;
+    }
+
+    .botoes-treino {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .botoes-treino .btn {
+        width: 100%;
+        text-align: center;
     }
 }
 
