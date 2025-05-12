@@ -392,10 +392,10 @@ main {
 
     .footer .box form button {
         max-width: 200px;
-    }
+    }  
 
     .footer .box h3 {
-        font-size: 2rem;
+        font-size: 3.5rem;
         color: white;
         padding: 1rem 0;
         margin-bottom: 1rem;
@@ -413,6 +413,14 @@ main {
         background: #6747a3;
         border-radius: 1px;
     }
+
+    .footer .box-container .box p {
+        font-size: 2.1rem;
+    }
+
+    .footer .box-container .box a {
+        font-size: 2.1rem;
+    } 
 }
     
 
