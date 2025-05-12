@@ -383,25 +383,116 @@ header {
     margin-bottom: 1.5rem;
 }
 
-@media (max-width: 1024px) {
-    .tcs, .st {
-        font-size: 2.5rem;
-    }
-    
-    .check {
-        flex-wrap: wrap;
-        max-width: 90%;
-    }
+/* Menu Hamburguer para Mobile */
+.menu .hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
 }
 
+.menu .hamburguer span {
+    height: 3px;
+    width: 30px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu .hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu .hamburguer span {
+    height: 3px;
+    width: 30px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsivo para telas até 768px */
 @media (max-width: 768px) {
     .menu {
-        flex-direction: column;
-        height: auto;
+        justify-content: space-between;
         padding: 2rem;
     }
-    
-    .logo {
+
+    .menu-header {
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        background: #111;
+        flex-direction: column;
+        width: 220px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .menu-header.ativo {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .lista-itens {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu .lista-itens a {
+        padding: 1.5rem;
+        border-bottom: 1px solid #222;
+        display: block;
+    }
+
+    .menu .hamburguer {
+        display: flex;
+    }
+
+     .menu {
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .menu-header {
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        background: #111;
+        flex-direction: column;
+        width: 220px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .menu-header.ativo {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .lista-itens {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu .lista-itens a {
+        padding: 1.5rem;
+        border-bottom: 1px solid #222;
+        display: block;
+    }
+
+    .menu .hamburguer {
+        display: flex;
+    }
+
+     .logo {
         margin-bottom: 1.5rem;
     }
     
@@ -423,6 +514,17 @@ header {
     .treinos-feitos, 
     .criar-treinos {
         margin: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tcs, .st {
+        font-size: 2.5rem;
+    }
+    
+    .check {
+        flex-wrap: wrap;
+        max-width: 90%;
     }
 }
 
@@ -451,3 +553,4 @@ header {
         font-size: 1.4rem;
     }
 }
+

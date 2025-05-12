@@ -11,6 +11,13 @@
 <header>
     <div class="menu">
         <h1 class="logo"><span>Hero</span>Fit</h1>
+
+        <div class="hamburguer" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <nav class="menu-header">
             <ul class="lista-itens">
                 <li><a href="/Principal basico HeroFit/index.html">Inicio</a></li>
@@ -87,6 +94,13 @@
             <a href="#" class="btn"><strong>Criar Treino</strong></a>
         </div>
     </section>
+
+    <script>
+    function toggleMenu() {
+        document.querySelector(".menu-header").classList.toggle("ativo");
+    }
+</script>
+
 </body>
 </html>
 
