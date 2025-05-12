@@ -9,22 +9,31 @@
 </head>
     <body>
         <header>
-            <div class="menu">
-             <h1 class="logo"><span>Hero</span>Fit</h1>
-                <nav class="menu-header">
-                    <ul class="lista-itens">
-                        <li><a href="/Principal basico HeroFit/index.html">Inicio</a></li>
-                        <li><a href="/Servicos HeroFit/index.html">Serviços</a></li>
-                        <li><a href="/Aulas HeroFit/aula.html">Aulas</a></li>
-                        <li><a href="/Treino HeroFit/treino.html">Treinos</a></li>
-                        <li><a href="/Planos HeroFit/index.html">Planos</a></li>
-                        <li><a href="/Feedbacks HeroFit/index.html">Feedback</a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <div class="menu">
+        <h1 class="logo"><span>Hero</span>Fit</h1>
+
+        <!-- Botão Hamburguer -->
+        <div class="hamburguer" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="menu-header">
+            <ul class="lista-itens">
+                <li><a href="/Principal basico HeroFit/index.html">Inicio</a></li>
+                <li><a href="/Servicos HeroFit/index.html">Serviços</a></li>
+                <li><a href="/Aulas HeroFit/aula.html">Aulas</a></li>
+                <li><a href="/Treino HeroFit/treino.html">Treinos</a></li>
+                <li><a href="/Planos HeroFit/index.html">Planos</a></li>
+                <li><a href="/Feedbacks HeroFit/index.html">Feedback</a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
         <section id="features" class="features">  
             <h1 class="heading1"><i>Bem-vindo à HeroFit</i></h1>
             <h1 class="heading2"><i>O que oferecemos aos nossos alunos</i></h1>
@@ -138,10 +147,9 @@
                 </div>
             </div>
         </section>
-    </body>
+        <script src="script.js"></script>
+    </body> 
 </html>
    
-    <script src="script.js"></script>
-</body>
-</html>
-</html> 
+    
+
