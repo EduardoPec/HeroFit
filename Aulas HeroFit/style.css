@@ -214,3 +214,102 @@ main {
     box-shadow: 0 0 25px rgba(103, 71, 163, 0.8);
 }
  
+/* Menu Hamburguer padrão HeroFit */
+.menu {
+    position: relative;
+}
+
+.menu .hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu .hamburguer span {
+    height: 3px;
+    width: 30px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsivo para telas até 768px */
+@media (max-width: 768px) {
+    .menu {
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .menu-header {
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        background: #111;
+        flex-direction: column;
+        width: 220px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border-bottom-left-radius: 1rem;
+        z-index: 999;
+    }
+
+    .menu-header.ativo {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .menu .lista-itens {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu .lista-itens a {
+        padding: 1.5rem;
+        border-bottom: 1px solid #222;
+        display: block;
+    }
+
+    .menu .hamburguer {
+        display: flex;
+    }
+
+    /* Tabela responsiva — modo colapsado */
+    .schedule-table, .schedule-table thead, .schedule-table tbody, .schedule-table th, .schedule-table td, .schedule-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .schedule-table thead {
+        display: none;
+    }
+
+    .schedule-table tr {
+        margin-bottom: 2rem;
+        border: 1px solid #333;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .schedule-table td {
+        padding: 1rem;
+        text-align: left;
+        position: relative;
+        font-size: 1.3rem;
+    }
+
+    .schedule-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #b39ddb;
+    }
+
+    .agendar-btn {
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+}
