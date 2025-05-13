@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,10 @@
             <h1 class="logo"><span>Hero</span>Fit</h1>
 
             <div class="hamburguer" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
             <nav class="menu-header">
                 <ul class="lista-itens">
@@ -32,9 +32,10 @@
             </nav>
         </div>
     </header>
+    
     <section class="review">
         <div class="review-box">
-            <h2 class="heading">Feedbacks  <span> Clientes</span></h2>
+            <h2 class="heading">Feedbacks <span>Clientes</span></h2>
 
             <div class="wrapper">
                 <div class="review-item">
@@ -47,7 +48,6 @@
                         <i class="fa-solid fa-star" id="star"></i>
                         <i class="fa-solid fa-star" id="star"></i>
                     </div>
-
                     <p>Quero agradecer pelo excelente atendimento e qualidade dos equipamentos. As aulas são motivadoras!</p>
                 </div>
 
@@ -61,7 +61,6 @@
                         <i class="fa-solid fa-star" id="star"></i>
                         <i class="fa-solid fa-star" id="star"></i>
                     </div>
-
                     <p>Quero agradecer pela experiência incrível com os treinos personalizados! O profissionalismo e a atenção do meu treinador têm feito toda a diferença nos meus resultados.</p>
                 </div>
 
@@ -75,36 +74,37 @@
                         <i class="fa-solid fa-star" id="star"></i>
                         <i class="fa-solid fa-star" id="star"></i>
                     </div>
-
                     <p>Amo treinar na HeroFit! A equipe é sempre solícita e os equipamentos estão em ótimo estado.</p>
                 </div>
-
+            </div>
+            
+            <!-- Seção de Feedback movida para fora do wrapper -->
+            <div class="feedback-container">
                 <section class="container-feed">
                     <h2 class="feed">Nos dê o seu Feedback</h2>
                     <form>
                         <legend>Informações de Contato</legend>
                         <fieldset>
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" placeholder="Digite seu nome...">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu email...">
-                        <label for="comentarios">Comentários:</label>
-                        <textarea name="comentarios" id="comentarios" rows="6" cols="150" placeholder="Digite seus comentários aqui..."></textarea>
-                        <div>
-                            <button class="bnt">Enviar</button>
-                        </div>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome...">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu email...">
+                            <label for="comentarios">Comentários:</label>
+                            <textarea name="comentarios" id="comentarios" rows="6" placeholder="Digite seus comentários aqui..."></textarea>
+                            <div>
+                                <button class="bnt">Enviar</button>
+                            </div>
                         </fieldset>
                     </form>
                 </section>
             </div>
         </div>
     </section>
-   
 
-     <script>
+    <script>
         function toggleMenu() {
-        document.querySelector(".menu-header").classList.toggle("ativo");
-    }
+            document.querySelector(".menu-header").classList.toggle("ativo");
+        }
     </script>
 </body>
 </html>
