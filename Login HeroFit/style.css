@@ -191,10 +191,6 @@ body::before {
     color: #aaa;
 }
 
-span {
-    font-size: 1.2rem;
-}
-
 .checkbox-container {
     display: flex;
     align-items: center;

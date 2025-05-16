@@ -122,6 +122,26 @@ header {
     transform: scale(1.2);
 }
 
+.profile-img-link {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    border-color: #b39ddb;
+}
+
 .review {
     padding: 15vh 2rem 5rem;
     display: flex;
@@ -260,50 +280,81 @@ header {
     text-align: center;
 }
 
-.feed {
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin: 5rem 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.3rem;
-    position: relative;
-    transition: all 0.4s ease;
+.feedback-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.feed:hover {
-    transform: scale(1.02);
-    color: #b39ddb;
-    text-shadow: 0 0 15px rgba(179, 157, 219, 0.6);
-}
-
-.feed::after {
-    content: "";
-    position: absolute;
-    bottom: -1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background: linear-gradient(to right, transparent, #6747a3, transparent);
-}
-
-form {
+.feedback-container .contact-card {
     background: rgba(17, 17, 17, 0.8);
     border-radius: 10px;
-    padding: 4rem;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 2rem;
     backdrop-filter: blur(5px);
     border: 1px solid rgba(103, 71, 163, 0.2);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s ease;
 }
 
-form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(103, 71, 163, 0.3);
+.feedback-container h3 {
+    font-size: 2rem;
+    color: #b39ddb;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(34, 34, 34, 0.6);
+    border: 1px solid rgba(103, 71, 163, 0.3);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #b39ddb;
+}
+
+.feedback-container textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(34, 34, 34, 0.6);
+    border: 1px solid rgba(103, 71, 163, 0.3);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.feedback-container textarea:focus {
+    outline: none;
+    border-color: #b39ddb;
+}
+
+.feedback-container .send-btn {
+    background: linear-gradient(to right top, #9d6df9, #222222);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.feedback-container .send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(103, 71, 163, 0.3);
 }
 
 fieldset {
@@ -355,7 +406,7 @@ input:focus, textarea:focus {
 input:hover, textarea:hover {
     border-color: #9d6df9;
     border-radius: 1rem;
-    transform: scale(1.04);  
+    transform: scale(1.01);  
     transition: 0.6s;
 }
 
@@ -364,7 +415,6 @@ input::placeholder, textarea::placeholder {
     font-size: 1.4rem;
 }
 
-/* Menu Hamburguer para Mobile */
 .menu .hamburguer {
     display: none;
     flex-direction: column;
