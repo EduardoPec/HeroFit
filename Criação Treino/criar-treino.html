@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/43d6fb86d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="criar-treino.css">
+    <title>Criar Treino - HeroFit</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1 class="logo"><span>Hero</span>Fit</h1>
+
+            <div class="hamburguer" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="menu-header">
+                <ul class="lista-itens">
+                    <li><a href="/Principal basico HeroFit/index.html">Inicio</a></li>
+                    <li><a href="/Servicos HeroFit/index.html">Serviços</a></li>
+                    <li><a href="/Aulas HeroFit/aula.html">Aulas</a></li>
+                    <li><a href="/Treino HeroFit/treino.html">Treinos</a></li>
+                    <li><a href="/Planos HeroFit/index.html">Planos</a></li>
+                    <li><a href="/Feedbacks HeroFit/index.html">Feedback</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <a href="/Perfil HeroFit/index.html" class="profile-img-link"><img src="/img/perfil.jpg" alt="Foto de Perfil" class="profile-img"></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="criar-treino-container">
+        <div class="header-criar-treino">
+            <h1><span>Hero</span>Fit - Criar Treino</h1>
+            <p>Monte seu treino personalizado selecionando os dias e exercícios</p>
+        </div>
+
+        <div class="dias-treino">
+            <h2>Selecione o Dia para Montar o Treino</h2>
+            <div class="dias-botoes">
+                <button class="dia-btn" data-dia="segunda">Segunda</button>
+                <button class="dia-btn" data-dia="terca">Terça</button>
+                <button class="dia-btn" data-dia="quarta">Quarta</button>
+                <button class="dia-btn" data-dia="quinta">Quinta</button>
+                <button class="dia-btn" data-dia="sexta">Sexta</button>
+                <button class="dia-btn" data-dia="sabado">Sábado</button>
+                <button class="dia-btn" data-dia="domingo">Domingo</button>
+            </div>
+        </div>
+
+        <div class="treino-dia-container">
+            <div class="grupos-musculares">
+                <h3>Exercícios Disponíveis</h3>
+                <div class="grupos-botoes">
+                    <button class="grupo-btn ativo" data-grupo="todos">Todos</button>
+                    <button class="grupo-btn" data-grupo="peito">Peito</button>
+                    <button class="grupo-btn" data-grupo="costas">Costas</button>
+                    <button class="grupo-btn" data-grupo="pernas">Pernas</button>
+                    <button class="grupo-btn" data-grupo="ombros">Ombros</button>
+                    <button class="grupo-btn" data-grupo="bracos">Bíceps</button>
+                    <button class="grupo-btn" data-grupo="triceps">Tríceps</button>
+                    <button class="grupo-btn" data-grupo="abdomen">Abdômen</button>
+                    <button class="grupo-btn" data-grupo="cardio">Cardio</button>
+                </div>
+            </div>
+
+            <div class="exercicios-container">
+                <!-- Peito -->
+                <div class="exercicio-categoria" data-categoria="peito">
+                    <h4>Exercícios para Peito</h4>
+                    <div class="exercicios-grid">
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Supino Reto</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> Deitado no banco, segure a barra com as mãos afastadas na largura dos ombros. Desça a barra até o peito e empurre para cima até estender os braços.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Supino Inclinado</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> No banco inclinado (30-45°), segure a barra ou halteres. Desça até o peito superior e empurre para cima mantendo o controle.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Crucifixo</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Deitado no banco, segure halteres com os braços estendidos acima do peito. Abra os braços em um arco até sentir o alongamento no peito e retorne.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Flexão de Braço</h5>
+                                <p><strong>Séries:</strong> 3-4 de 10-15 reps</p>
+                                <p><strong>Execução:</strong> Apoie as mãos no chão na largura dos ombros, corpo reto. Desça o corpo até o peito quase tocar o chão e empure para cima.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Supino Declinado</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> No banco declinado, segure a barra com pegada na largura dos ombros. Desça controladamente até o peito inferior e empurre para cima.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Crossover no Cabo</h5>
+                                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                                <p><strong>Execução:</strong> Entre nas polias altas, segure os cabos e dê um passo à frente. Com os cotovelos levemente flexionados, traga as mãos à frente do corpo em movimento de arco.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Flexão Declinada</h5>
+                                <p><strong>Séries:</strong> 3 de 10-15 reps</p>
+                                <p><strong>Execução:</strong> Posicione os pés elevados em um banco ou step, mãos no chão na largura dos ombros. Mantenha o corpo reto e realize a flexão.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Supino com Halteres</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> Deitado no banco reto, segure os halteres acima do peito com os cotovelos estendidos. Desça os halteres para os lados do peito e retorne à posição inicial.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Pullover</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Deitado transversalmente no banco, segure um halter com as duas mãos acima do peito. Leve o halter em arco para trás da cabeça, alongando o peito, e retorne.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Peck Deck</h5>
+                                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                                <p><strong>Execução:</strong> Sentado no aparelho, posicione os antebraços nas almofadas/pegadores. Pressione as almofadas à frente, juntando-as, e controle o retorno.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Costas -->
+                <div class="exercicio-categoria" data-categoria="costas">
+                    <h4>Exercícios para Costas</h4>
+                    <div class="exercicios-grid">
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Remada Curvada</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> Com os joelhos levemente flexionados, incline o tronco para frente e puxe a barra em direção ao abdômen, mantendo as costas retas.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Puxada pela Frente</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> Sentado no aparelho, segure a barra com pegada larga. Puxe a barra em direção ao peito, mantendo o tronco levemente inclinado para trás.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Remada Cavalinho</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Apoie o peito no banco inclinado e puxe os halteres para cima, apertando as escápulas no topo do movimento.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Barra Fixa</h5>
+                                <p><strong>Séries:</strong> 3-4 de 6-10 reps</p>
+                                <p><strong>Execução:</strong> Segure a barra com pegada pronada na largura dos ombros. Puxe o corpo para cima até o queixo passar a barra, controlando a descida.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Puxada Aberta</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> No aparelho de puxada, segure a barra com pegada aberta (mais larga que os ombros). Puxe a barra em direção à clavícula, contraindo as costas.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Remada Unilateral</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps por braço</p>
+                                <p><strong>Execução:</strong> Apoie um joelho e uma mão no banco, mantendo a coluna neutra. Com o outro braço, puxe o halter até a lateral do abdômen.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Pulley Neutro</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> No aparelho de puxada, use a pegada com as mãos paralelas (triângulo ou barra H). Puxe em direção ao peito, focando na contração das costas.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Remada no T-Bar</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> No aparelho T-Bar ou com barra apoiada em um canto, segure o pegador e puxe em direção ao peito, mantendo o tronco estabilizado.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Face Pull</h5>
+                                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                                <p><strong>Execução:</strong> No pulley alto com corda, puxe a corda em direção ao rosto com os cotovelos elevados, focando na contração das escápulas e posterior dos ombros.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Remada Baixa no Cabo</h5>
+                                <p><strong>Séries:</strong> 3 de 10-15 reps</p>
+                                <p><strong>Execução:</strong> Sentado no aparelho de puxada, utilize a pega baixa e puxe o pegador em direção ao abdômen, mantendo os cotovelos próximos ao corpo.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pernas -->
+                <div class="exercicio-categoria" data-categoria="pernas">
+                    <h4>Exercícios para Pernas</h4>
+                    <div class="exercicios-grid">
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Agachamento Livre</h5>
+                                <p><strong>Séries:</strong> 4 de 6-10 reps</p>
+                                <p><strong>Execução:</strong> Pés na largura dos ombros, desça como se fosse sentar, mantendo as costas retas e joelhos alinhados com os pés. Volte à posição inicial.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Leg Press</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> No aparelho, apoie os pés na plataforma na largura dos ombros. Empurre a plataforma estendendo as pernas, sem travar os joelhos.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Afundo</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps por perna</p>
+                                <p><strong>Execução:</strong> Dê um passo à frente e desça até o joelho traseiro quase tocar o chão. Mantenha o tronco ereto e empure com a perna da frente.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Stiff</h5>
+                                <p><strong>Séries:</strong> 3 de 8-10 reps</p>
+                                <p><strong>Execução:</strong> Com barra ou halteres, mantenha as pernas semi-flexionadas e incline o tronco para frente, mantendo as costas retas. Volte à posição inicial.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Cadeira Extensora</h5>
+                                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                                <p><strong>Execução:</strong> Sentado no aparelho, estenda os joelhos elevando o peso até as pernas ficarem paralelas ao chão. Controle o retorno sem deixar o peso bater.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Mesa Flexora</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Deitado no aparelho, flexione os joelhos puxando o peso em direção aos glúteos. Controle o movimento na volta sem deixar o peso bater.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Elevação Pélvica</h5>
+                                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                                <p><strong>Execução:</strong> Deitado com os joelhos dobrados e pés apoiados no chão, eleve o quadril contraindo os glúteos. Mantenha no topo por 1-2 segundos e desça controladamente.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Agachamento Sumô</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> Pés mais afastados que os ombros e pontas abertas para fora. Desça mantendo os joelhos alinhados com os dedos dos pés, focando nos adutores e glúteos.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Abdução de Quadril</h5>
+                                <p><strong>Séries:</strong> 3 de 15-20 reps</p>
+                                <p><strong>Execução:</strong> No aparelho, posicione-se com as pernas juntas e abra-as contra a resistência. Controle o movimento na volta, mantendo a tensão nos músculos abdutores.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Panturrilha em Pé</h5>
+                                <p><strong>Séries:</strong> 4 de 15-20 reps</p>
+                                <p><strong>Execução:</strong> Em pé, com a planta dos pés apoiada em um step ou plataforma e os calcanhares livres, eleve-se na ponta dos pés e desça controladamente.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ombros -->
+                <div class="exercicio-categoria" data-categoria="ombros">
+                    <h4>Exercícios para Ombros</h4>
+                    <div class="exercicios-grid">
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Desenvolvimento Militar</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> Sentado ou em pé, empurre a barra ou halteres para cima até estender os braços, sem travar os cotovelos. Desça com controle.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Elevação Lateral</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Com halteres nas mãos, eleve os braços lateralmente até a altura dos ombros, mantendo os cotovelos levemente flexionados.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Remada Alta</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Segure a barra com pegada pronada e puxe até a altura dos ombros, mantendo os cotovelos mais altos que as mãos.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Desenvolvimento Arnold</h5>
+                                <p><strong>Séries:</strong> 3 de 8-10 reps</p>
+                                <p><strong>Execução:</strong> Comece com halteres na frente dos ombros, palmas para você. Ao elevar, gire os pulsos até as palmas ficarem para frente no topo.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Elevação Frontal</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Em pé, com halteres ou barra, eleve os braços à frente até a altura dos ombros, mantendo os cotovelos levemente flexionados.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Encolhimento de Ombros</h5>
+                                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                                <p><strong>Execução:</strong> Em pé, segurando halteres ou barra, eleve os ombros em direção às orelhas. Mantenha no topo por 1-2 segundos e desça controladamente.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Desenvolvimento com Halteres</h5>
+                                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                                <p><strong>Execução:</strong> Sentado com costas retas, eleve os halteres acima da cabeça até os braços estarem estendidos. Desça controladamente até posição inicial.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Crucifixo Inverso</h5>
+                                <p><strong>Séries:</strong> 3 de 10-15 reps</p>
+                                <p><strong>Execução:</strong> Inclinado para frente, com halteres leves, eleve os braços lateralmente com as palmas voltadas para baixo, focando no posterior do ombro.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Desenvolvimento Máquina</h5>
+                                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                                <p><strong>Execução:</strong> Sentado no aparelho, ajuste a altura do banco e empurre os pegadores para cima até estender os braços, sem travar os cotovelos.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Elevação Lateral na Polia</h5>
+                                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                                <p><strong>Execução:</strong> Em pé ao lado do cabo baixo, segure a pega e eleve o braço lateralmente até altura do ombro, mantendo leve flexão no cotovelo.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Braços (Bíceps) -->
+<div class="exercicio-categoria" data-categoria="biceps">
+    <h4>Exercícios para Bíceps</h4>
+    <div class="exercicios-grid">
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Direta</h5>
+                <p><strong>Séries:</strong> 3-4 de 8-12 reps</p>
+                <p><strong>Execução:</strong> Em pé, segure a barra ou halteres com pegada supinada. Flexione os cotovelos levando o peso aos ombros, sem balançar o corpo.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Martelo</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Com halteres, mantenha as palmas voltadas uma para a outra durante toda a execução. Flexione os cotovelos sem mover os ombros.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Scott</h5>
+                <p><strong>Séries:</strong> 3 de 8-10 reps</p>
+                <p><strong>Execução:</strong> Sentado no banco Scott, apoie os braços no suporte inclinado. Segure a barra e faça a flexão dos cotovelos mantendo os braços fixos no apoio.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Concentrada</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Sentado na ponta do banco, apoie o braço na parte interna da coxa. Segure o halter e faça a flexão do cotovelo isolando o bíceps.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Alternada</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Em pé, segure um halter em cada mão. Faça a flexão dos cotovelos alternadamente, girando o punho durante o movimento para supinação.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca 21</h5>
+                <p><strong>Séries:</strong> 3 de 21 reps (7+7+7)</p>
+                <p><strong>Execução:</strong> Com barra, faça 7 repetições da parte inferior do movimento, 7 da parte superior e 7 completas. Realize sem descanso entre as séries.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Inversa</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Segure a barra com pegada pronada (palmas para baixo). Flexione os cotovelos mantendo os braços junto ao corpo, trabalhando o braquiorradial.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca no Cabo</h5>
+                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                <p><strong>Execução:</strong> No cabo, pegada supinada. Afaste-se um pouco da máquina e flexione os cotovelos mantendo-os junto ao corpo e tensão constante.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Inclinada</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Sentado no banco inclinado, segure os halteres. O alongamento adicional pela inclinação aumenta a tensão na parte longa do bíceps.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Rosca Spider</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Sente-se no banco inclinado de frente para o encosto. Estenda os braços para baixo e faça a flexão dos cotovelos mantendo-os abertos.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tríceps -->
+<div class="exercicio-categoria" data-categoria="triceps">
+    <h4>Exercícios para Tríceps</h4>
+    <div class="exercicios-grid">
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Tríceps Testa</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Deitado no banco, segure a barra W ou halteres acima do peito. Flexione os cotovelos levando o peso em direção à testa e estenda.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Tríceps Corda</h5>
+                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                <p><strong>Execução:</strong> No pulley alto, segure a corda com as mãos próximas. Empurre para baixo até estender os braços e abra as mãos no final.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Tríceps Coice</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Apoie o joelho e a mão no banco. Segure o halter com o braço flexionado a 90°. Estenda completamente o braço para trás como um coice.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Tríceps Francês</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Em pé ou sentado, segure o halter com as duas mãos acima da cabeça. Flexione os cotovelos descendo o peso atrás da nuca e estenda.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Tríceps Banco</h5>
+                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                <p><strong>Execução:</strong> Apoie as mãos na borda do banco, dedos para frente. Flexione os cotovelos descendo o corpo e depois estenda, mantendo os cotovelos próximos.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Tríceps Pulley</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> No pulley alto, use a barra reta. Mantenha os cotovelos junto ao corpo e estenda os antebraços para baixo, mantendo o tronco ereto.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Mergulho entre Bancos</h5>
+                <p><strong>Séries:</strong> 3 de 10-15 reps</p>
+                <p><strong>Execução:</strong> Apoie as mãos em bancos paralelos, pernas estendidas. Flexione os cotovelos descendo o corpo e depois empurre para cima.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Supino Fechado</h5>
+                <p><strong>Séries:</strong> 3 de 8-12 reps</p>
+                <p><strong>Execução:</strong> Deitado no banco, segure a barra com as mãos próximas (distância de um palmo). Desça o peso ao peito e empurre para cima.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Extensão de Tríceps Unilateral</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps por braço</p>
+                <p><strong>Execução:</strong> Em pé ou sentado, segure um halter acima da cabeça com um braço. Flexione o cotovelo descendo o peso atrás da cabeça e estenda.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Tríceps Máquina</h5>
+                <p><strong>Séries:</strong> 3 de 10-12 reps</p>
+                <p><strong>Execução:</strong> Sente-se na máquina, segure as alças e empurre para baixo até estender completamente os braços. Controle o movimento na volta.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+    </div>
+</div>
+
+<!-- Abdômen -->
+<div class="exercicio-categoria" data-categoria="abdomen">
+    <h4>Exercícios para Abdômen</h4>
+    <div class="exercicios-grid">
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Abdominal Supra</h5>
+                <p><strong>Séries:</strong> 3 de 15-20 reps</p>
+                <p><strong>Execução:</strong> Deitado, joelhos flexionados. Levante o tronco contraindo o abdômen, sem puxar o pescoço. Desça com controle.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Prancha</h5>
+                <p><strong>Séries:</strong> 3 de 30-60 segundos</p>
+                <p><strong>Execução:</strong> Apoie os antebraços no chão, corpo reto. Mantenha a posição contraindo o core, sem deixar o quadril cair ou subir.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Elevação de Pernas</h5>
+                <p><strong>Séries:</strong> 3 de 12-15 reps</p>
+                <p><strong>Execução:</strong> Deitado, pernas estendidas. Eleve as pernas até 90° e desça com controle, sem tocar o chão. Mantenha a lombar pressionada.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Russian Twist</h5>
+                <p><strong>Séries:</strong> 3 de 15 reps por lado</p>
+                <p><strong>Execução:</strong> Sentado, incline o tronco para trás e gire de um lado para o outro com um peso ou medicine ball nas mãos.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Crunch Reverso</h5>
+                <p><strong>Séries:</strong> 3 de 15-20 reps</p>
+                <p><strong>Execução:</strong> Deitado, flexione as pernas a 90°. Eleve o quadril do chão em direção ao peito, contraindo o abdômen inferior.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Abdominal Bicicleta</h5>
+                <p><strong>Séries:</strong> 3 de 20 reps (10 cada lado)</p>
+                <p><strong>Execução:</strong> Deitado, mãos atrás da cabeça. Eleve o tronco girando e leve o cotovelo ao joelho oposto, alternando os lados como pedalando.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Prancha Lateral</h5>
+                <p><strong>Séries:</strong> 3 de 30 segundos cada lado</p>
+                <p><strong>Execução:</strong> Apoie um antebraço no chão, corpo de lado em linha reta. Mantenha a posição contraindo o core e os oblíquos.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Mountain Climber</h5>
+                <p><strong>Séries:</strong> 3 de 30-45 segundos</p>
+                <p><strong>Execução:</strong> Em posição de prancha com braços estendidos, traga os joelhos alternadamente em direção ao peitoral em movimento rápido e contínuo.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Abdominal na Roda</h5>
+                <p><strong>Séries:</strong> 3 de 8-12 reps</p>
+                <p><strong>Execução:</strong> Ajoelhado, segure a roda com as mãos. Estenda o corpo para frente rolando a roda e retorne à posição inicial mantendo core ativo.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+
+        <div class="exercicio-card">
+            <div class="exercicio-descricao">
+                <h5>Dragon Flag</h5>
+                <p><strong>Séries:</strong> 3 de 8-10 reps</p>
+                <p><strong>Execução:</strong> Deitado no banco, segure atrás da cabeça. Eleve o corpo inteiro em linha reta e desça lentamente sem tocar o banco, apenas ombros e cabeça.</p>
+            </div>
+            <button class="btn-add">Adicionar</button>
+        </div>
+    </div>
+</div>
+
+                <!-- Cardio -->
+                <div class="exercicio-categoria" data-categoria="cardio">
+                    <h4>Exercícios Cardiovasculares</h4>
+                    <div class="exercicios-grid">
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Esteira</h5>
+                                <p><strong>Duração:</strong> 20-40 minutos</p>
+                                <p><strong>Execução:</strong> Caminhada rápida ou corrida em ritmo moderado. Mantenha postura ereta e passos curtos para reduzir impacto.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Bicicleta Ergométrica</h5>
+                                <p><strong>Duração:</strong> 20-40 minutos</p>
+                                <p><strong>Execução:</strong> Ajuste o banco para que o joelho fique levemente flexionado no ponto mais baixo. Mantenha ritmo constante.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Elíptico</h5>
+                                <p><strong>Duração:</strong> 20-40 minutos</p>
+                                <p><strong>Execução:</strong> Mantenha postura ereta, empurrando e puxando os braços alternadamente. Aumente a resistência para intensificar.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+
+                        <div class="exercicio-card">
+                            <div class="exercicio-descricao">
+                                <h5>Pular Corda</h5>
+                                <p><strong>Duração:</strong> 10-20 minutos</p>
+                                <p><strong>Execução:</strong> Mantenha os cotovelos próximos ao corpo e gire a corda com os pulsos. Pule baixo para reduzir impacto.</p>
+                            </div>
+                            <button class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="meu-treino">
+            <h2>Meu Treino - <span id="dia-selecionado-titulo">Selecione um dia</span></h2>
+            <div class="treino-selecionado">
+                <p class="empty-message">Nenhum exercício adicionado ainda</p>
+                <!-- Exercícios adicionados aparecerão aqui -->
+            </div>
+            <div class="actions">
+                <button class="btn btn-salvar">Salvar Treino</button>
+                <button class="btn btn-limpar">Limpar Dia</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/criar-treino.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu-header").classList.toggle("ativo");
+        }
+    </script>
+</body>
+</html>
