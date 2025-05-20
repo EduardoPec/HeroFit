@@ -412,13 +412,17 @@ p:hover {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .pricing {
         padding: 15vh 2rem 5rem;
     }
     
     .plan {
         flex: 1 1 45%;
+    }
+
+    .plan.anual {
+     margin-top: 20px;
     }
 }
 
@@ -480,6 +484,10 @@ p:hover {
     .plan.inter:hover {
         transform: translateY(-10px) scale(1);
     }
+
+    .plan.anual {
+     margin-top: 18px;
+    } 
 }
 
 @media (max-width: 480px) {
