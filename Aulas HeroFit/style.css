@@ -7,27 +7,31 @@
 }
 
 html {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    font-size: 62.5%;
+    font-size: 10px;
     color: white;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.95)), 
-                url('img/home2.jpg') center/cover no-repeat fixed;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;  
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(20, 20, 20, 0.95)), url(/img/home2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 header {
     width: 100%;
     height: 7vh;
-    background-color: rgba(22, 22, 22, 0.8);
+    background: rgba(22, 22, 22, 0.8);
+    backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid rgba(103, 71, 163, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .menu {
@@ -45,8 +49,10 @@ header {
     font-size: 3.5rem;
     letter-spacing: 0.4rem;
     cursor: pointer;
+    transition: all 0.3s ease;
     color: white;
-    transition: all 0.4s ease-in-out;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(103, 71, 163, 0.5);
 }
 
 .logo:hover {
@@ -62,6 +68,7 @@ header {
     display: flex;
     list-style: none;
     gap: 10px;
+    align-items: center;
 }
 
 .menu .lista-itens a {
@@ -87,12 +94,21 @@ header {
 }
 
 .menu .lista-itens a:hover:before {
-    width: 100%;
+    width: 80%;
 }
 
 .menu .lista-itens a:hover {
+    color: #b39ddb;
+}
+
+.menu .lista-itens li a i {
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.menu .lista-itens li a:hover i {
     color: #6747a3;
-    text-shadow: 0 0 10px rgba(103, 71, 163, 0.5);
+    transform: scale(1.2);
 }
 
 main {
