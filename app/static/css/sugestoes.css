@@ -16,10 +16,10 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.95)), 
-                url('img/home2.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.95));
     min-height: 100vh;
     line-height: 1.6;
+    padding-bottom: 2.5rem;
 }
 
 body::before {
@@ -302,6 +302,7 @@ strong {
 
 .btn {
     display: inline-block;
+    margin-bottom: 4rem;
     margin: 1rem;
     padding: 1.2rem 3rem;
     background: linear-gradient(to right top, #9d6df9, #222222);
@@ -330,7 +331,6 @@ strong {
     display: flex;
     justify-content: center;
     gap: 1.6rem;
-    margin-bottom: 2.5rem;
     flex-wrap: wrap;
 }
 

@@ -12,8 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(20, 20, 20, 0.95)), 
-                url('img/home2.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(20, 20, 20, 0.95));
     color: white;
 }
 
