@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(20, 20, 20, 0.95)), url(/img/home2.jpg);
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(20, 20, 20, 0.95)), url(../img/plano_fundo_principal.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
