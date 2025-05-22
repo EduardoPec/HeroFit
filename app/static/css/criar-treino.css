@@ -189,6 +189,12 @@ header {
     color: #6747a3;
 }
 
+.header-criar-treino h1:hover {
+    transform: scale(1.08);
+    transition: 0.6s;
+    color: #b39ddb;
+}
+
 .header-criar-treino p {
     font-size: 1.6rem;
     color: #aaa;
@@ -221,6 +227,12 @@ header {
     background: linear-gradient(to right, transparent, #6747a3, transparent);
 }
 
+.dias-treino h2:hover {
+    transform: scale(1.07);
+    transition: 0.6s;
+    color: #b39ddb;
+}
+
 .dias-botoes {
     display: flex;
     flex-wrap: wrap;
@@ -239,11 +251,14 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .dia-btn:hover {
-    background: rgba(103, 71, 163, 0.3);
+    background: rgba(118, 80, 187, 0.3);
     color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.4);
 }
 
 .dia-btn.ativo {
@@ -287,6 +302,7 @@ header {
     color: #aaa;
     border: 1px solid rgba(103, 71, 163, 0.3);
     border-radius: 20px;
+    font-weight: bold;
     font-size: 1.4rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -294,8 +310,10 @@ header {
 }
 
 .grupo-btn:hover {
-    background: rgba(103, 71, 163, 0.3);
+    background: rgba(118, 80, 187, 0.3);
     color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.4);
 }
 
 .grupo-btn.ativo {
@@ -363,7 +381,9 @@ header {
 
 .btn-add {
     padding: 0.8rem;
-    background: linear-gradient(to right, #6747a3, #9d6df9);
+    background: linear-gradient(to right top, #9d6df9, #222222);
+    text-transform: uppercase;
+    font-weight: bold;
     color: white;
     border: none;
     border-radius: 5px;
@@ -374,8 +394,8 @@ header {
 }
 
 .btn-add:hover {
-    background: linear-gradient(to right, #9d6df9, #6747a3);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.4);
 }
 
 /* Meu treino */
@@ -405,6 +425,12 @@ header {
     width: 100px;
     height: 3px;
     background: linear-gradient(to right, transparent, #6747a3, transparent);
+}
+
+.meu-treino h2:hover {
+    transform: scale(1.08);
+    transition: 0.6s;
+    color: #b39ddb;
 }
 
 #dia-selecionado-titulo {
@@ -481,8 +507,10 @@ header {
 }
 
 .btn-salvar {
-    background: linear-gradient(to right, #6747a3, #9d6df9);
+    background: linear-gradient(to right top, #9d6df9, #222222);
     color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .btn-salvar:hover {
@@ -500,6 +528,27 @@ header {
 .btn-limpar:hover {
     background: rgba(255, 255, 255, 0.2);
     color: white;
+    font-weight: bold;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.5);
+}
+
+.btn-voltar {
+    background: linear-gradient(to right top, #9d6df9, #222222);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-voltar:hover {
+    background: linear-gradient(to right, #9d6df9, #6747a3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(103, 71, 163, 0.5);
+}
+
+i {
+    padding-right: 6px;
 }
 
 /* Responsividade */
